@@ -1,0 +1,9 @@
+hf_sum_60 exit 1
+hf_region_60 exit 1
+hf_conflict_60 exit 1
+hf_sum_w83_60 exit 1
+hf_phase_canny_full_60 exit 1
+done
+base_canny_s1.0_label_seed1 exit 0
+base_canny_s1.0_label_seed2 exit 0
+base_depth_s1.0_label exit 0

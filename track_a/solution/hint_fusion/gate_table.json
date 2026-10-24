@@ -1,0 +1,83 @@
+{
+ "_comment": "Per-class raw hint multipliers (canny, depth), averaged over each 16x16 token; used as-is unless gate_normalize. Unlisted classes use _default. Depth must stay small (<~0.3): at depth effective weight >~0.3 with canny 1.0 hints the output collapses into a washed depth render.",
+ "_default": {
+  "canny": 1.0,
+  "depth": 0.2
+ },
+ "background": {
+  "canny": 1.0,
+  "depth": 0.2
+ },
+ "driver": {
+  "canny": 1.0,
+  "depth": 0.2
+ },
+ "passenger_codriver": {
+  "canny": 1.0,
+  "depth": 0.2
+ },
+ "passenger_rear_left": {
+  "canny": 1.0,
+  "depth": 0.2
+ },
+ "passenger_rear_right": {
+  "canny": 1.0,
+  "depth": 0.2
+ },
+ "baby": {
+  "canny": 1.0,
+  "depth": 0.2
+ },
+ "driver_seatbelt": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "codriver_seatbelt": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "rear_left_seatbelt": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "rear_right_seatbelt": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "phone_codriver": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "driver_phone": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "cola_bottle": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "cola_can": {
+  "canny": 1.0,
+  "depth": 0.05
+ },
+ "suitcase": {
+  "canny": 1.0,
+  "depth": 0.3
+ },
+ "baby_seat": {
+  "canny": 1.0,
+  "depth": 0.3
+ },
+ "seat": {
+  "canny": 0.8,
+  "depth": 0.3
+ },
+ "car_interior": {
+  "canny": 0.8,
+  "depth": 0.3
+ },
+ "exterior": {
+  "canny": 1.0,
+  "depth": 0.0
+ }
+}

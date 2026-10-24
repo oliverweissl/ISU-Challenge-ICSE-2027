@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "notes": [
+    {
+      "id": "n001",
+      "topic": "novelty",
+      "kind": "finding",
+      "text": "Scout (abstract-level only): F1 done before (MaxFusion, Cross-ControlNet); F2/F3 incremental (AtteConDA 2605.09425 closest threat); F4 PCGrad-style hint projection novel; T1 novel only as combination (modality dropout + fidelity knob + control-off distillation on few-step DiT).",
+      "paths": {
+        "research/related_work.md": "0e833d77ea4f238f02c72c8b6fe2e10ad7a5e33616e8a0ddb1c38e3216316a4d"
+      },
+      "created_at": 1792241148.543696,
+      "verified_at": 1792241148.543696
+    },
+    {
+      "id": "n002",
+      "topic": "depth-bug",
+      "kind": "finding",
+      "text": "data/depth/png/*.png are 16-bit; PIL convert('RGB') saturates to white so depth control was unconditioned. Use hint_fusion.method.load_control (near=bright, exterior set far, percentile stretch). Baseline depth path in run_experiment.py patched to use it.",
+      "paths": {
+        "track_a/solution/hint_fusion/method.py": "6dbab466ba5af065f4f35e91deed42a95b30484ccaa9d19318c8e8875c4c380e",
+        "track_a/solution/run_experiment.py": "5d0a4a44dfe078e5dad245cc9f9b2392ddb4d61cbaf42ca95844daf10d78db91"
+      },
+      "created_at": 1792242023.641733,
+      "verified_at": 1792242023.641733
+    },
+    {
+      "id": "n003",
+      "topic": "hint-fusion",
+      "kind": "finding",
+      "text": "Union-net hints are highly aligned (mean cos ~0.8); cos<0 only ~0.7% tokens, so conflict projection (F4) likely weak. Depth weight >0.3 over canny washes colours. canny_only fusion equals baseline bit-exactly. ~4.1-4.9 s/img, 26.9 GiB peak.",
+      "paths": {
+        "track_a/solution/hint_fusion/README.md": "c43fd1126d78a83412996c594f2ad4f1138a9e1470d9e1a35d091aa7eee3ec2b"
+      },
+      "created_at": 1792242023.7030742,
+      "verified_at": 1792242023.7030742
+    },
+    {
+      "id": "n004",
+      "topic": "scheduler-quirk",
+      "kind": "finding",
+      "text": "run_experiment.py 2-step warm-up leaves scheduler shift_terminal=2/3, so existing 8-step baseline/hint_fusion runs use a non-clean Turbo sigma schedule; init_sim overrides it with the clean schedule. Treat baseline rows as 'warm-up schedule'. Backlog B1.",
+      "paths": {
+        "track_a/solution/init_sim/method.py": "8e3872d6e4d0d27161df4a7f7595acc3c22114dbffb77ab84f465672e83a791c",
+        "track_a/solution/run_experiment.py": "1d70e8ea70e166c4be6eca1f5d2abe8a73bd942800e81b20342d60e5b61d72c8"
+      },
+      "created_at": 1792248424.471904,
+      "verified_at": 1792248424.471904
+    }
+  ]
+}

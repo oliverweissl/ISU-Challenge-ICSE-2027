@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/run_m.py", line 58, in <module>
+    gen = build(cfg)
+          ^^^^^^^^^^
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/run_m.py", line 38, in build
+    return sdxl_gen.SDXLGen(cfg)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/sdxl_gen.py", line 18, in __init__
+    vae = AutoencoderKL.from_pretrained(C.snap("madebyollin/sdxl-vae-fp16-fix"), torch_dtype=dt)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/m_common.py", line 41, in snap
+    return str(root / "snapshots" / (root / "refs" / "main").read_text().strip())
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/miniconda3/envs/zimage/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/miniconda3/envs/zimage/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/data/weissl/.cache/huggingface/hub/models--madebyollin--sdxl-vae-fp16-fix/refs/main'

@@ -8,9 +8,15 @@ venv/**
 track_a/track_a_evaluation_output/*
 track_a/submissions/*
 
-track_b/track_b_evaluation_output/*
-track_b/submissions/*
 
 **/__pycache__/**
 
-**/test/test_output/**
+**/test/test_output/**.claude/.notekeeper/
+
+track_a/solution/checkpoints/
+
+# contact sheets / sample outputs contain real reference photos (gated data): never publish
+track_a/solution/out/
+track_a/solution/logs/*.png
+.idea/
+paper/

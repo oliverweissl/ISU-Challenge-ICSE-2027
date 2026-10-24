@@ -1,0 +1,23 @@
+c1_hand_fx_60 exit 0
+c1_hist_fx_60 exit 0
+c1_reinhard_60 exit 0
+c1_hand_60 exit 0
+c1_hist_60 exit 0
+c2smoke exit 0
+c2_hand_s0.5_60 exit 0
+c4a train exit 0
+c4_c4a_60 exit 0
+c4b train exit 0
+c4_c4b_60 exit 0
+c2_reinhard_s0.5_60 exit 0
+c2_hand_s0.35_60 exit 0
+c1_hist_fx_60_hold20 exit 0
+c1_reinhard_60_hold20 exit 0
+c2_reinhard_s0.5_60_hold20 exit 0
+c4_c4b_60_hold20 exit 0
+c3_real_s60_60 exit 0
+c3_zgen_s60_60 exit 0
+c5_seat_recolor_60 exit 0
+c5_babyseat_hue_60 exit 0
+c5_interior_dark_60 exit 1
+c3_real_s60_60_hold20 exit 0

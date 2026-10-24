@@ -1,0 +1,30 @@
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 11972.04it/s]
+There are modules in ZImageTransformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+loaded 3D transformer's pretrained weights from /data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer ...
+['/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00001-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00002-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00003-of-00003.safetensors']
+### All Parameters: 6154.901056 M
+### attn1 Parameters: 0.0 M
+sample_00040 {1.0: 3.7, 0.5: 3.1, 0.0: 2.8}
+sample_00041 {1.0: 6.4, 0.5: 5.9, 0.0: 5.6}
+sample_00042 {1.0: 9.2, 0.5: 8.7, 0.0: 8.3}
+sample_00043 {1.0: 12.1, 0.5: 11.5, 0.0: 11.1}
+sample_00044 {1.0: 14.9, 0.5: 14.3, 0.0: 13.9}
+sample_00045 {1.0: 17.6, 0.5: 17.2, 0.0: 16.7}
+sample_00046 {1.0: 20.7, 0.5: 20.0, 0.0: 19.6}
+sample_00047 {1.0: 23.5, 0.5: 22.8, 0.0: 22.4}
+sample_00048 {1.0: 26.3, 0.5: 25.6, 0.0: 25.2}
+sample_00049 {1.0: 29.2, 0.5: 28.4, 0.0: 28.0}
+sample_00050 {1.0: 31.9, 0.5: 31.2, 0.0: 30.8}
+sample_00051 {1.0: 34.7, 0.5: 34.0, 0.0: 33.6}
+sample_00052 {1.0: 37.5, 0.5: 36.8, 0.0: 36.4}
+sample_00053 {1.0: 40.4, 0.5: 39.6, 0.0: 39.3}
+sample_00054 {1.0: 43.2, 0.5: 42.5, 0.0: 42.0}
+sample_00055 {1.0: 45.9, 0.5: 45.6, 0.0: 44.8}
+sample_00056 {1.0: 48.8, 0.5: 48.4, 0.0: 47.6}
+sample_00057 {1.0: 51.5, 0.5: 51.2, 0.0: 50.4}
+sample_00058 {1.0: 54.3, 0.5: 54.0, 0.0: 53.2}
+sample_00059 {1.0: 57.1, 0.5: 56.8, 0.0: 56.0}
+done t1v2_k1.0_20
+done t1v2_k0.5_20
+done t1v2_k0.0_20

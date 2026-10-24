@@ -20,7 +20,6 @@ This repository provides code, data, and documentation for both competition trac
 ### Documentation
 
 - **[Track A README](track_a/README.md)** — Participant guide for in-car scene translation and evaluation
-- **[Track B README](track_b/README.md)** — Participant guide for in-car scene understanding and evaluation
 
 ### Dataset and Example Data Channels
 
@@ -47,7 +46,7 @@ Participants can use both datasets for development while only the base dataset p
 | Synthetic RGB image | Instance segmentation map | Canny edge map | Real in-car image |
 | --- | --- | --- | --- |
 | ![Synthetic RGB in-car scene](readme_assets/sample_0001_sim.png) | ![Instance segmentation map](readme_assets/sample_0001_instance_seg.png) | ![Canny edge map](readme_assets/sample_0001_canny.png) | ![Real in-car scene](readme_assets/20251207_110606.jpg) |
-| Source scene used by Track A. | False-color mask; see the [instance-segmentation legend](readme_assets/instance_seg_legend.json). | Edge information extracted from the synthetic scene. | Example real image provided for Track B. |
+| Source scene used by Track A. | False-color mask; see the [instance-segmentation legend](readme_assets/instance_seg_legend.json). | Edge information extracted from the synthetic scene. | Example real image. |
 
 ## 🏁 Competition Tracks
 
@@ -82,49 +81,13 @@ See [`track_a/evaluator_cli.py`](track_a/evaluator_cli.py) for CLI interface. Im
 
 **Additional resources** in [`track_a/`](track_a/): [Track A README](track_a/README.md), [participant starter notebook](track_a/participant_starter.ipynb), [challenge evaluator notebook](track_a/track_a_challenge_evaluator.ipynb), [metrics implementation](track_a/track_a_metrics.py), and [image metrics utilities](track_a/image_metrics_utils.py).
 
-### 👁️ Track B: Perception Robustness
-
-Track B is for participants who build robust ISU systems. The goal is to answer safety-relevant questions about synthetic and real in-car scenes, including questions about occupants, seat belts, objects, and driver or passenger behavior.
-
-Systems should process visual in-car scenes and return predictions in the prescribed JSON format. The Track B evaluator uses `Qwen/Qwen2.5-VL-3B-Instruct` as its reference model. A starter collection of real in-car images is provided for training and validation, and the final evaluation uses a withheld test set containing both synthetic and real scenes.
-
-**Inputs:** Varied synthetic and real in-car scenes together with the competition questions.
-
-**Outputs:** A model, model parameters, reproducible inference code, and JSON-formatted visual question-answering predictions.
-
-**Track B evaluation:**
-
-Download data from [Hugging Face](https://huggingface.co/datasets/ISU-Test/isu-challenge-dataset), then evaluate an ISU system via CLI:
-```bash
-cd track_b
-python evaluator_cli.py evaluate --data-dir data --output report.json
-```
-
-Implement a custom ISU system by extending `ISUSystem`:
-```python
-from evaluator_cli import ISUSystem, EvaluatorTrackB
-
-class MyISUSystem(ISUSystem):
-    def predict(self, image):
-        return {"driver_phone": "NO", ...}
-    def name(self):
-        return "MySystem"
-
-evaluator = EvaluatorTrackB(data_dir="data", isu_system=MyISUSystem())
-report = evaluator.evaluate()
-```
-
-See [`track_b/evaluator_cli.py`](track_b/evaluator_cli.py) for CLI interface. Implementation example in [`track_b/example_custom_system.py`](track_b/example_custom_system.py).
-
-**Additional resources** in [`track_b/`](track_b/): [Track B README](track_b/README.md), [evaluator notebook](track_b/track_b_evaluator.ipynb), and [Python evaluator](track_b/track_b_evaluator.py).
-
 ### 🧩 Features
 
-The benchmark describes each scene through a set of observable features. These labels cover information such as driver behaviour, passenger occupancy, seat-belt usage, and the presence and location of objects in the cabin. Together, they define the questions that Track B systems must detect and the semantic information that Track A generators must preserve when changing a scene's visual appearance.
+The benchmark describes each scene through a set of observable features. These labels cover information such as driver behaviour, passenger occupancy, seat-belt usage, and the presence and location of objects in the cabin. Together, they define the semantic information that Track A generators must preserve when changing a scene's visual appearance.
 
 The complete list of relevant features per track is provided here: https://isu-challenge.github.io/feature-schema.html.
 
-Track A and Track B predictions and evaluations use only the feature subsets specified in their respective notebooks: the [Track A participant starter notebook](track_a/participant_starter.ipynb) and the [Track B evaluator notebook](track_b/track_b_evaluator.ipynb).
+Track A evaluation uses only the feature subset specified in the [Track A participant starter notebook](track_a/participant_starter.ipynb).
 
 
 #### Example Feature Labels
@@ -162,16 +125,6 @@ Both tracks use executable, automated evaluation pipelines.
 
 Track A results are ranked using Pareto non-dominance sorting across the competition objectives. In case of a tie, a weighted linear combination is used.
 
-### 👁️ Track B Metrics
-
-- **Accuracy:** Performance of visual question answering predictions; scene & feature level based.
-- **Latency:** Time required to process a scene and produce its answer, measured on the predefined EC2 instance with an NVIDIA L40S GPU.
-- **Extended evaluation:** Submitted systems are evaluated on an extended real and synthetic dataset.
-
-Track B participants train and evaluate with synthetic image data and a set of 50 real images. Participants are also invited to collect additional real data. The final evaluation uses withheld real and synthetic scenes.
-
-Participants can use [ISU-Test](https://github.com/ast-fortiss-tum/ISU-Test) to generate additional controllable synthetic in-car scenes for Track B development and training. Alternatively, they can use the synthetic and real images provided in the starter kit. Generated or provided scenes should use the competition feature definitions and labels so that predictions can be evaluated with the Track B pipeline.
-
 ### 🔍 Evaluation Models and Data
 
 The baseline for Track A is `Qwen/Qwen2.5-VL-3B-Instruct`, and the final evaluation includes an industrial system to assess generalizability.
@@ -191,9 +144,8 @@ The competition is organized in connection with A* conference ICSE 2027. The top
 Submissions are made through the competition platform are to be evaluated on a withheld test set.
 
 - **Track A:** Generated image archive and reproducible generation code.
-- **Track B:** Model files, parameters, inference or training code, and predictions in the required JSON format.
 
-Submissions must pass automated integrity and reproducibility checks. Track A outputs must preserve the required semantic and spatial information. Track B code submissions may be required for verification. Information about the submission format is provided in the designated track folders. All submission will be in addition manually reviewed.
+Submissions must pass automated integrity and reproducibility checks. Track A outputs must preserve the required semantic and spatial information. Information about the submission format is provided in the designated track folders. All submission will be in addition manually reviewed.
 
 ## 🗓️ Timeline
 
@@ -273,74 +225,6 @@ Realism is assessed using the published metrics from the challenge and additiona
 <summary>Can I use LLMs for image generation?</summary>
 
 Yes. Participants may use LLMs, VLMs, diffusion models, image-to-image translation systems, or other generative techniques, provided that the resulting scenes are realistic, reproducible, and semantically valid. Any required model or API dependencies must be declared in the submission, and applicable token or compute limits must be respected.
-
-</details>
-
-## 👁️ Track B
-
-<details>
-<summary>What is an interior scene understanding system?</summary>
-
-An interior scene understanding system analyzes images from inside a vehicle and provides information, such as occupants, seat-belt status, driver behaviour, and objects in the cabin. In Track B, the system returns these predictions using the prescribed feature names and JSON format.
-
-</details>
-
-<details>
-<summary>Where can I get real data for training?</summary>
-
-The starter kit provides 50 real in-car images together with the relevant labels. The data are provided for training and validation and are released under the MIT license. Participants may also collect additional real data using the instructions and recording script provided with the challenge. Additional synthetic training data can be generated with [ISU-Test](https://github.com/ast-fortiss-tum/ISU-Test) [1].
-
-</details>
-
-<details>
-<summary>What does the interior scene understanding model need to predict?</summary>
-
-The model must predict the observable scene features represented in the label JSON files. These include driver phone use, passenger occupancy, safety-belt status, suitcase presence and location, beverage objects, baby-seat configuration, and related cabin features. The required feature names and allowed values are defined by the provided labels and evaluation prompt.
-
-</details>
-
-<details>
-<summary>What format should predictions use?</summary>
-
-Predictions must be returned as strict JSON objects using the prescribed feature names. Each evaluated feature should have one value, selected from the values allowed for that feature.
-
-</details>
-
-<details>
-<summary>How is Track B accuracy calculated?</summary>
-
-The evaluator compares each predicted feature with the corresponding ground-truth value in the label JSON. Accuracy is reported at feature level, and scene-level exact match is also reported when all evaluated features for a scene are correct. Missing predictions for labeled features are counted as incorrect.
-
-</details>
-
-<details>
-<summary>Which images are used for evaluation?</summary>
-
-Participants use the synthetic and real images supplied in the starter kit for development. The final evaluation uses a withheld extended dataset containing both synthetic and real in-car scenes, so systems should not rely on a single visual domain.
-
-</details>
-
-<details>
-<summary>Which model should I use?</summary>
-
-The starter kit includes a baseline using the open-weight `Qwen/Qwen2.5-VL-3B-Instruct` model. The final evaluation is performed on the submitted system, not by requiring every participant to use the baseline model.
-
-</details>
-
-<details>
-<summary>How is latency measured?</summary>
-
-Latency is the time required to process an image and produce its Track B prediction. For comparable results, final measurements are performed on the predefined `g6e.2xlarge` EC2 instance with an NVIDIA L40S GPU.
-
-</details>
-
-<details>
-<summary>Can I use external data or models?</summary>
-
-Yes, but participants must document external datasets, pretrained models, and dependencies, and provide reproducible inference or training code. Submitted artefacts must comply with the applicable licenses.
-
-
-
 
 </details>
 

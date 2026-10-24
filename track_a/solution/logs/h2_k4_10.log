@@ -1,0 +1,68 @@
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/flashhead_xfuser.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/infinitalk_xfuser.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/wan_xfuser.py:24: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/wan_xfuser.py:66: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/wan_xfuser.py:165: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d.py:56: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d.py:81: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d.py:143: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d_self_forcing.py:43: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_audio_injector.py:103: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_audio_injector.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d_s2v.py:55: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 37211.23it/s]
+There are modules in ZImageTransformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+loaded 3D transformer's pretrained weights from /data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer ...
+['/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00001-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00002-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00003-of-00003.safetensors']
+### All Parameters: 6154.901056 M
+### attn1 Parameters: 0.0 M
+Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   6%|▋         | 52/824 [00:00<00:01, 444.46it/s]Loading weights:  13%|█▎        | 109/824 [00:00<00:01, 512.26it/s]Loading weights:  20%|█▉        | 161/824 [00:00<00:01, 473.72it/s]Loading weights:  29%|██▊       | 235/824 [00:00<00:01, 570.47it/s]Loading weights:  36%|███▌      | 294/824 [00:00<00:00, 540.64it/s]Loading weights:  44%|████▍     | 363/824 [00:00<00:00, 569.58it/s]Loading weights:  51%|█████▏    | 423/824 [00:00<00:00, 572.26it/s]Loading weights:  77%|███████▋  | 634/824 [00:00<00:00, 1032.66it/s]Loading weights: 100%|██████████| 824/824 [00:00<00:00, 856.65it/s] 
+/home/weissl/miniconda3/envs/zimage/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/weissl/miniconda3/envs/zimage/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/attention_utils.py:330: UserWarning: Padding mask is disabled when using scaled_dot_product_attention. It can have a significant impact on performance.
+  warnings.warn(
+[sample_00040] anchor_miss 1 init 3 final 3 target 3 stop reached_at_init 5s vram 23.1GB
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/hynea/optimize.py:212: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rec["trace"].append({"step": step, "loss": float(loss), "l1": float(l1), "lpips": float(lp), "steer": float(steer),
+  sample_00041 step 10 loss 2.473 l1 0.121 lp 0.394 steer 0.929 tf_flip 1 exact_mismatch 3/14 (target 6) 33s
+  sample_00041 step 20 loss 2.287 l1 0.122 lp 0.373 steer 0.803 tf_flip 5 exact_mismatch 3/14 (target 6) 62s
+  sample_00041 step 30 loss 2.219 l1 0.122 lp 0.362 steer 0.768 tf_flip 5 exact_mismatch 3/14 (target 6) 91s
+  sample_00041 step 40 loss 2.185 l1 0.121 lp 0.359 steer 0.744 tf_flip 5 exact_mismatch 3/14 (target 6) 110s
+[sample_00041] anchor_miss 4 init 5 final 5 target 6 stop max_steps 110s vram 33.4GB
+  sample_00042 step 10 loss 2.550 l1 0.150 lp 0.394 steer 0.917 tf_flip 3 exact_mismatch 1/12 (target 3) 23s
+  sample_00042 step 20 loss 2.341 l1 0.149 lp 0.367 steer 0.794 tf_flip 4 exact_mismatch 1/12 (target 3) 43s
+  sample_00042 step 30 loss 2.236 l1 0.148 lp 0.362 steer 0.707 tf_flip 4 exact_mismatch 2/12 (target 3) 63s
+  sample_00042 step 40 loss 2.249 l1 0.148 lp 0.360 steer 0.724 tf_flip 5 exact_mismatch 3/12 (target 3) 84s
+[sample_00042] anchor_miss 1 init 1 final 3 target 3 stop reached 84s vram 33.4GB
+[sample_00043] anchor_miss 0 init 2 final 2 target 2 stop reached_at_init 3s vram 23.2GB
+[sample_00044] anchor_miss 1 init 4 final 4 target 3 stop reached_at_init 3s vram 23.2GB
+[sample_00045] anchor_miss 1 init 4 final 4 target 3 stop reached_at_init 3s vram 23.2GB
+[sample_00046] anchor_miss 0 init 4 final 4 target 2 stop reached_at_init 4s vram 23.2GB
+[sample_00047] anchor_miss 0 init 3 final 3 target 2 stop reached_at_init 4s vram 23.2GB
+  sample_00048 step 10 loss 2.377 l1 0.151 lp 0.378 steer 0.792 tf_flip 5 exact_mismatch 2/14 (target 3) 34s
+  sample_00048 step 20 loss 2.243 l1 0.150 lp 0.359 steer 0.718 tf_flip 6 exact_mismatch 2/14 (target 3) 64s
+  sample_00048 step 30 loss 2.096 l1 0.147 lp 0.341 steer 0.632 tf_flip 7 exact_mismatch 2/14 (target 3) 94s
+  sample_00048 step 40 loss 2.069 l1 0.147 lp 0.336 steer 0.621 tf_flip 7 exact_mismatch 1/14 (target 3) 118s
+[sample_00048] anchor_miss 1 init 2 final 2 target 3 stop max_steps 118s vram 33.4GB
+  sample_00049 step 10 loss 2.334 l1 0.117 lp 0.372 steer 0.868 tf_flip 4 exact_mismatch 0/14 (target 3) 22s
+  sample_00049 step 20 loss 2.153 l1 0.118 lp 0.368 steer 0.695 tf_flip 5 exact_mismatch 2/14 (target 3) 41s
+  sample_00049 step 30 loss 2.127 l1 0.116 lp 0.358 steer 0.704 tf_flip 7 exact_mismatch 2/14 (target 3) 61s
+  sample_00049 step 40 loss 2.091 l1 0.116 lp 0.356 steer 0.676 tf_flip 7 exact_mismatch 2/14 (target 3) 80s
+[sample_00049] anchor_miss 1 init 2 final 2 target 3 stop max_steps 80s vram 33.4GB

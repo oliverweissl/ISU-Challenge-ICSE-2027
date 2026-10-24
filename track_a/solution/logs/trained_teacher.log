@@ -1,0 +1,959 @@
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/flashhead_xfuser.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/infinitalk_xfuser.py:22: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/wan_xfuser.py:24: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/wan_xfuser.py:66: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/dist/wan_xfuser.py:165: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d.py:56: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d.py:81: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d.py:143: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d_self_forcing.py:43: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_audio_injector.py:103: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_audio_injector.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/weissl/Projects/VideoX-Fun/videox_fun/models/wan_transformer3d_s2v.py:55: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+loaded 3D transformer's pretrained weights from /data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer ...
+['/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00001-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00002-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00003-of-00003.safetensors']
+Missing keys will be initialized: ['control_all_x_embedder.2-1.bias', 'control_all_x_embedder.2-1.weight', 'control_layers.0.adaLN_modulation.0.bias', 'control_layers.0.adaLN_modulation.0.weight', 'control_layers.0.after_proj.bias', 'control_layers.0.after_proj.weight', 'control_layers.0.attention.norm_k.weight', 'control_layers.0.attention.norm_q.weight', 'control_layers.0.attention.to_k.weight', 'control_layers.0.attention.to_out.0.weight', 'control_layers.0.attention.to_q.weight', 'control_layers.0.attention.to_v.weight', 'control_layers.0.attention_norm1.weight', 'control_layers.0.attention_norm2.weight', 'control_layers.0.before_proj.bias', 'control_layers.0.before_proj.weight', 'control_layers.0.feed_forward.w1.weight', 'control_layers.0.feed_forward.w2.weight', 'control_layers.0.feed_forward.w3.weight', 'control_layers.0.ffn_norm1.weight', 'control_layers.0.ffn_norm2.weight', 'control_layers.1.adaLN_modulation.0.bias', 'control_layers.1.adaLN_modulation.0.weight', 'control_layers.1.after_proj.bias', 'control_layers.1.after_proj.weight', 'control_layers.1.attention.norm_k.weight', 'control_layers.1.attention.norm_q.weight', 'control_layers.1.attention.to_k.weight', 'control_layers.1.attention.to_out.0.weight', 'control_layers.1.attention.to_q.weight', 'control_layers.1.attention.to_v.weight', 'control_layers.1.attention_norm1.weight', 'control_layers.1.attention_norm2.weight', 'control_layers.1.feed_forward.w1.weight', 'control_layers.1.feed_forward.w2.weight', 'control_layers.1.feed_forward.w3.weight', 'control_layers.1.ffn_norm1.weight', 'control_layers.1.ffn_norm2.weight', 'control_layers.10.adaLN_modulation.0.bias', 'control_layers.10.adaLN_modulation.0.weight', 'control_layers.10.after_proj.bias', 'control_layers.10.after_proj.weight', 'control_layers.10.attention.norm_k.weight', 'control_layers.10.attention.norm_q.weight', 'control_layers.10.attention.to_k.weight', 'control_layers.10.attention.to_out.0.weight', 'control_layers.10.attention.to_q.weight', 'control_layers.10.attention.to_v.weight', 'control_layers.10.attention_norm1.weight', 'control_layers.10.attention_norm2.weight', 'control_layers.10.feed_forward.w1.weight', 'control_layers.10.feed_forward.w2.weight', 'control_layers.10.feed_forward.w3.weight', 'control_layers.10.ffn_norm1.weight', 'control_layers.10.ffn_norm2.weight', 'control_layers.11.adaLN_modulation.0.bias', 'control_layers.11.adaLN_modulation.0.weight', 'control_layers.11.after_proj.bias', 'control_layers.11.after_proj.weight', 'control_layers.11.attention.norm_k.weight', 'control_layers.11.attention.norm_q.weight', 'control_layers.11.attention.to_k.weight', 'control_layers.11.attention.to_out.0.weight', 'control_layers.11.attention.to_q.weight', 'control_layers.11.attention.to_v.weight', 'control_layers.11.attention_norm1.weight', 'control_layers.11.attention_norm2.weight', 'control_layers.11.feed_forward.w1.weight', 'control_layers.11.feed_forward.w2.weight', 'control_layers.11.feed_forward.w3.weight', 'control_layers.11.ffn_norm1.weight', 'control_layers.11.ffn_norm2.weight', 'control_layers.12.adaLN_modulation.0.bias', 'control_layers.12.adaLN_modulation.0.weight', 'control_layers.12.after_proj.bias', 'control_layers.12.after_proj.weight', 'control_layers.12.attention.norm_k.weight', 'control_layers.12.attention.norm_q.weight', 'control_layers.12.attention.to_k.weight', 'control_layers.12.attention.to_out.0.weight', 'control_layers.12.attention.to_q.weight', 'control_layers.12.attention.to_v.weight', 'control_layers.12.attention_norm1.weight', 'control_layers.12.attention_norm2.weight', 'control_layers.12.feed_forward.w1.weight', 'control_layers.12.feed_forward.w2.weight', 'control_layers.12.feed_forward.w3.weight', 'control_layers.12.ffn_norm1.weight', 'control_layers.12.ffn_norm2.weight', 'control_layers.13.adaLN_modulation.0.bias', 'control_layers.13.adaLN_modulation.0.weight', 'control_layers.13.after_proj.bias', 'control_layers.13.after_proj.weight', 'control_layers.13.attention.norm_k.weight', 'control_layers.13.attention.norm_q.weight', 'control_layers.13.attention.to_k.weight', 'control_layers.13.attention.to_out.0.weight', 'control_layers.13.attention.to_q.weight', 'control_layers.13.attention.to_v.weight', 'control_layers.13.attention_norm1.weight', 'control_layers.13.attention_norm2.weight', 'control_layers.13.feed_forward.w1.weight', 'control_layers.13.feed_forward.w2.weight', 'control_layers.13.feed_forward.w3.weight', 'control_layers.13.ffn_norm1.weight', 'control_layers.13.ffn_norm2.weight', 'control_layers.14.adaLN_modulation.0.bias', 'control_layers.14.adaLN_modulation.0.weight', 'control_layers.14.after_proj.bias', 'control_layers.14.after_proj.weight', 'control_layers.14.attention.norm_k.weight', 'control_layers.14.attention.norm_q.weight', 'control_layers.14.attention.to_k.weight', 'control_layers.14.attention.to_out.0.weight', 'control_layers.14.attention.to_q.weight', 'control_layers.14.attention.to_v.weight', 'control_layers.14.attention_norm1.weight', 'control_layers.14.attention_norm2.weight', 'control_layers.14.feed_forward.w1.weight', 'control_layers.14.feed_forward.w2.weight', 'control_layers.14.feed_forward.w3.weight', 'control_layers.14.ffn_norm1.weight', 'control_layers.14.ffn_norm2.weight', 'control_layers.2.adaLN_modulation.0.bias', 'control_layers.2.adaLN_modulation.0.weight', 'control_layers.2.after_proj.bias', 'control_layers.2.after_proj.weight', 'control_layers.2.attention.norm_k.weight', 'control_layers.2.attention.norm_q.weight', 'control_layers.2.attention.to_k.weight', 'control_layers.2.attention.to_out.0.weight', 'control_layers.2.attention.to_q.weight', 'control_layers.2.attention.to_v.weight', 'control_layers.2.attention_norm1.weight', 'control_layers.2.attention_norm2.weight', 'control_layers.2.feed_forward.w1.weight', 'control_layers.2.feed_forward.w2.weight', 'control_layers.2.feed_forward.w3.weight', 'control_layers.2.ffn_norm1.weight', 'control_layers.2.ffn_norm2.weight', 'control_layers.3.adaLN_modulation.0.bias', 'control_layers.3.adaLN_modulation.0.weight', 'control_layers.3.after_proj.bias', 'control_layers.3.after_proj.weight', 'control_layers.3.attention.norm_k.weight', 'control_layers.3.attention.norm_q.weight', 'control_layers.3.attention.to_k.weight', 'control_layers.3.attention.to_out.0.weight', 'control_layers.3.attention.to_q.weight', 'control_layers.3.attention.to_v.weight', 'control_layers.3.attention_norm1.weight', 'control_layers.3.attention_norm2.weight', 'control_layers.3.feed_forward.w1.weight', 'control_layers.3.feed_forward.w2.weight', 'control_layers.3.feed_forward.w3.weight', 'control_layers.3.ffn_norm1.weight', 'control_layers.3.ffn_norm2.weight', 'control_layers.4.adaLN_modulation.0.bias', 'control_layers.4.adaLN_modulation.0.weight', 'control_layers.4.after_proj.bias', 'control_layers.4.after_proj.weight', 'control_layers.4.attention.norm_k.weight', 'control_layers.4.attention.norm_q.weight', 'control_layers.4.attention.to_k.weight', 'control_layers.4.attention.to_out.0.weight', 'control_layers.4.attention.to_q.weight', 'control_layers.4.attention.to_v.weight', 'control_layers.4.attention_norm1.weight', 'control_layers.4.attention_norm2.weight', 'control_layers.4.feed_forward.w1.weight', 'control_layers.4.feed_forward.w2.weight', 'control_layers.4.feed_forward.w3.weight', 'control_layers.4.ffn_norm1.weight', 'control_layers.4.ffn_norm2.weight', 'control_layers.5.adaLN_modulation.0.bias', 'control_layers.5.adaLN_modulation.0.weight', 'control_layers.5.after_proj.bias', 'control_layers.5.after_proj.weight', 'control_layers.5.attention.norm_k.weight', 'control_layers.5.attention.norm_q.weight', 'control_layers.5.attention.to_k.weight', 'control_layers.5.attention.to_out.0.weight', 'control_layers.5.attention.to_q.weight', 'control_layers.5.attention.to_v.weight', 'control_layers.5.attention_norm1.weight', 'control_layers.5.attention_norm2.weight', 'control_layers.5.feed_forward.w1.weight', 'control_layers.5.feed_forward.w2.weight', 'control_layers.5.feed_forward.w3.weight', 'control_layers.5.ffn_norm1.weight', 'control_layers.5.ffn_norm2.weight', 'control_layers.6.adaLN_modulation.0.bias', 'control_layers.6.adaLN_modulation.0.weight', 'control_layers.6.after_proj.bias', 'control_layers.6.after_proj.weight', 'control_layers.6.attention.norm_k.weight', 'control_layers.6.attention.norm_q.weight', 'control_layers.6.attention.to_k.weight', 'control_layers.6.attention.to_out.0.weight', 'control_layers.6.attention.to_q.weight', 'control_layers.6.attention.to_v.weight', 'control_layers.6.attention_norm1.weight', 'control_layers.6.attention_norm2.weight', 'control_layers.6.feed_forward.w1.weight', 'control_layers.6.feed_forward.w2.weight', 'control_layers.6.feed_forward.w3.weight', 'control_layers.6.ffn_norm1.weight', 'control_layers.6.ffn_norm2.weight', 'control_layers.7.adaLN_modulation.0.bias', 'control_layers.7.adaLN_modulation.0.weight', 'control_layers.7.after_proj.bias', 'control_layers.7.after_proj.weight', 'control_layers.7.attention.norm_k.weight', 'control_layers.7.attention.norm_q.weight', 'control_layers.7.attention.to_k.weight', 'control_layers.7.attention.to_out.0.weight', 'control_layers.7.attention.to_q.weight', 'control_layers.7.attention.to_v.weight', 'control_layers.7.attention_norm1.weight', 'control_layers.7.attention_norm2.weight', 'control_layers.7.feed_forward.w1.weight', 'control_layers.7.feed_forward.w2.weight', 'control_layers.7.feed_forward.w3.weight', 'control_layers.7.ffn_norm1.weight', 'control_layers.7.ffn_norm2.weight', 'control_layers.8.adaLN_modulation.0.bias', 'control_layers.8.adaLN_modulation.0.weight', 'control_layers.8.after_proj.bias', 'control_layers.8.after_proj.weight', 'control_layers.8.attention.norm_k.weight', 'control_layers.8.attention.norm_q.weight', 'control_layers.8.attention.to_k.weight', 'control_layers.8.attention.to_out.0.weight', 'control_layers.8.attention.to_q.weight', 'control_layers.8.attention.to_v.weight', 'control_layers.8.attention_norm1.weight', 'control_layers.8.attention_norm2.weight', 'control_layers.8.feed_forward.w1.weight', 'control_layers.8.feed_forward.w2.weight', 'control_layers.8.feed_forward.w3.weight', 'control_layers.8.ffn_norm1.weight', 'control_layers.8.ffn_norm2.weight', 'control_layers.9.adaLN_modulation.0.bias', 'control_layers.9.adaLN_modulation.0.weight', 'control_layers.9.after_proj.bias', 'control_layers.9.after_proj.weight', 'control_layers.9.attention.norm_k.weight', 'control_layers.9.attention.norm_q.weight', 'control_layers.9.attention.to_k.weight', 'control_layers.9.attention.to_out.0.weight', 'control_layers.9.attention.to_q.weight', 'control_layers.9.attention.to_v.weight', 'control_layers.9.attention_norm1.weight', 'control_layers.9.attention_norm2.weight', 'control_layers.9.feed_forward.w1.weight', 'control_layers.9.feed_forward.w2.weight', 'control_layers.9.feed_forward.w3.weight', 'control_layers.9.ffn_norm1.weight', 'control_layers.9.ffn_norm2.weight', 'control_noise_refiner.0.adaLN_modulation.0.bias', 'control_noise_refiner.0.adaLN_modulation.0.weight', 'control_noise_refiner.0.after_proj.bias', 'control_noise_refiner.0.after_proj.weight', 'control_noise_refiner.0.attention.norm_k.weight', 'control_noise_refiner.0.attention.norm_q.weight', 'control_noise_refiner.0.attention.to_k.weight', 'control_noise_refiner.0.attention.to_out.0.weight', 'control_noise_refiner.0.attention.to_q.weight', 'control_noise_refiner.0.attention.to_v.weight', 'control_noise_refiner.0.attention_norm1.weight', 'control_noise_refiner.0.attention_norm2.weight', 'control_noise_refiner.0.before_proj.bias', 'control_noise_refiner.0.before_proj.weight', 'control_noise_refiner.0.feed_forward.w1.weight', 'control_noise_refiner.0.feed_forward.w2.weight', 'control_noise_refiner.0.feed_forward.w3.weight', 'control_noise_refiner.0.ffn_norm1.weight', 'control_noise_refiner.0.ffn_norm2.weight', 'control_noise_refiner.1.adaLN_modulation.0.bias', 'control_noise_refiner.1.adaLN_modulation.0.weight', 'control_noise_refiner.1.after_proj.bias', 'control_noise_refiner.1.after_proj.weight', 'control_noise_refiner.1.attention.norm_k.weight', 'control_noise_refiner.1.attention.norm_q.weight', 'control_noise_refiner.1.attention.to_k.weight', 'control_noise_refiner.1.attention.to_out.0.weight', 'control_noise_refiner.1.attention.to_q.weight', 'control_noise_refiner.1.attention.to_v.weight', 'control_noise_refiner.1.attention_norm1.weight', 'control_noise_refiner.1.attention_norm2.weight', 'control_noise_refiner.1.feed_forward.w1.weight', 'control_noise_refiner.1.feed_forward.w2.weight', 'control_noise_refiner.1.feed_forward.w3.weight', 'control_noise_refiner.1.ffn_norm1.weight', 'control_noise_refiner.1.ffn_norm2.weight']
+Initializing missing parameter 'control_layers.0.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.0.before_proj.weight' with zero.
+Initializing missing parameter 'control_layers.2.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.6.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.after_proj.bias' with zero.
+Initializing missing parameter 'control_noise_refiner.0.before_proj.bias' with zero.
+Initializing missing parameter 'control_layers.1.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.1.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.after_proj.bias' with zero.
+Initializing missing parameter 'control_noise_refiner.0.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.7.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.3.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.12.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.6.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.3.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.8.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.7.after_proj.weight' with zero.
+Initializing missing parameter 'control_noise_refiner.0.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.5.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.4.after_proj.weight' with zero.
+Initializing missing parameter 'control_noise_refiner.0.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.9.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.8.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.12.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.11.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.14.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.11.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.3.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.2.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.0.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.10.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.11.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.9.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_all_x_embedder.2-1.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.4.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.13.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.8.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.3.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.4.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.7.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.6.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.0.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.0.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.after_proj.weight' with zero.
+Initializing missing parameter 'control_noise_refiner.1.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.ffn_norm2.weight' with model.state_dict().
+There are modules in ZImageControlTransformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Initializing missing parameter 'control_layers.8.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.before_proj.bias' with zero.
+Initializing missing parameter 'control_layers.0.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.7.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.before_proj.weight' with zero.
+Initializing missing parameter 'control_layers.1.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.2.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.10.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.5.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.12.feed_forward.w3.weight' with model.state_dict().
+### All Parameters: 9511.126848 M
+### attn1 Parameters: 0.0 M
+controlnet load: missing=521 unexpected=0
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 5080.40it/s]
+  0%|          | 0/8 [00:00<?, ?it/s]/home/weissl/Projects/VideoX-Fun/videox_fun/models/attention_utils.py:330: UserWarning: Padding mask is disabled when using scaled_dot_product_attention. It can have a significant impact on performance.
+  warnings.warn(
+ 12%|█▎        | 1/8 [00:00<00:03,  2.31it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.48it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.49it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.47it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.59it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.58it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.59it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.58it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.51it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.58it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.59it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.59it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.59it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.59it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.58it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+sample_00019 1.75s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+sample_00039 1.74s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.51it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+sample_00059 1.74s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.46it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.46it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.37it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.31it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.11it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.33it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.19it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.12it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.31it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.30it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.31it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.20it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.01it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.15it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.35it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.33it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  1.98it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.15it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.21it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.07it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.15it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.14it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.11it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.21it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.32it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.30it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.19it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.08it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.20it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s]
+sample_00079 1.79s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.10it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.20it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.20it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.10it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.21it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.20it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.19it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.06it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.10it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.20it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.14it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.14it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.05it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.20it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.00it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.11it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.05it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.06it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.12it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.19it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.20it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.14it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.30it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.35it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.32it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.32it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.37it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.33it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.34it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.26it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+sample_00099 1.83s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.12it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.17it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.26it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.34it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.19it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  1.98it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.10it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.14it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.11it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.30it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.06it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.19it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.31it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.40it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.37it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.19it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.31it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.40it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.36it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.17it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.17it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.14it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.13it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s]
+sample_00119 1.86s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.16it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.31it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.31it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.26it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.26it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.16it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.26it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.12it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.22it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+sample_00139 1.88s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.19it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.15it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.17it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.15it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.15it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.14it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.14it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.14it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.14it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.31it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.29it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.26it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.31it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.29it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.20it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.17it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.30it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.19it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.20it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.15it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.13it/s]
+sample_00159 1.89s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.13it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.13it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.20it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.19it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.13it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.12it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.23it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.23it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.21it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.18it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.18it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.15it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.31it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.18it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.33it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.32it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.35it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.14it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.24it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.24it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.33it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.29it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.20it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.18it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.34it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.33it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.33it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.33it/s]
+sample_00179 1.90s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.27it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.21it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.34it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.32it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.32it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.34it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.29it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.30it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.25it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.30it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.33it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.32it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.31it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.31it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.28it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.24it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.33it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.31it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.32it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.30it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.19it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.02it/s] 38%|███▊      | 3/8 [00:01<00:02,  1.97it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.00it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.40it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.13it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.37it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.37it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.34it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.35it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.38it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.48it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.40it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.31it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.38it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.39it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.38it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.32it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.36it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.36it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.38it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.35it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.31it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.29it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.30it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.12it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.16it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.16it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.51it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.33it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.38it/s]
+sample_00199 1.93s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.35it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.32it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.30it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.31it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.30it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.23it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.27it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.27it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.29it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.29it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.33it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.30it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.28it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.29it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.34it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.32it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.34it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.34it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:03,  2.32it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.17it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.26it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.25it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+sample_00219 1.92s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.51it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+sample_00239 1.91s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.42it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.50it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.50it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.50it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.50it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.41it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.42it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.41it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.41it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.42it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.42it/s]
+sample_00259 1.90s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.41it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.41it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.41it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+sample_00279 1.89s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+sample_00299 1.88s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+sample_00319 1.87s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+sample_00339 1.86s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.42it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.46it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+sample_00359 1.86s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.51it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+sample_00379 1.85s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+sample_00399 1.85s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.46it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.46it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.46it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+sample_00419 1.84s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.46it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.57it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+sample_00439 1.84s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+sample_00459 1.84s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+sample_00479 1.83s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+sample_00499 1.83s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.46it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.42it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.57it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.58it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.58it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+sample_00519 1.83s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.51it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.42it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+sample_00539 1.83s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.51it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.42it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+sample_00559 1.82s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.52it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.45it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.57it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.56it/s]
+sample_00579 1.82s/img
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.51it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.53it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.43it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.54it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.52it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.55it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.46it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.43it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.44it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.55it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.54it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.56it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.55it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s] 38%|███▊      | 3/8 [00:01<00:01,  2.53it/s]
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:00<00:02,  2.45it/s] 25%|██▌       | 2/8 [00:00<00:02,  2.45it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s] 38%|███▊      | 3/8 [00:01<00:02,  2.44it/s]
+sample_00599 1.82s/img

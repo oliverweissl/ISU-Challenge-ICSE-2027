@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/run_m.py", line 58, in <module>
+    gen = build(cfg)
+          ^^^^^^^^^^
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/run_m.py", line 38, in build
+    return sdxl_gen.SDXLGen(cfg)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/sdxl_gen.py", line 16, in __init__
+    cns = [ControlNetModel.from_pretrained(C.snap(CN[n]), torch_dtype=dt, variant="fp16", use_safetensors=True)
+                                           ^^^^^^^^^^^^^
+  File "/home/weissl/PycharmProjects/ISU-Challenge-ICSE-2027/track_a/solution/other_models/m_common.py", line 39, in snap
+    return snapshot_download(repo, local_files_only=True, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/miniconda3/envs/zimage/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/miniconda3/envs/zimage/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/weissl/miniconda3/envs/zimage/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 349, in snapshot_download
+    _raise_if_incomplete_snapshot(
+  File "/home/weissl/miniconda3/envs/zimage/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 595, in _raise_if_incomplete_snapshot
+    raise IncompleteSnapshotError(
+huggingface_hub.errors.IncompleteSnapshotError: The cached snapshot for 'diffusers/controlnet-canny-sdxl-1.0' (revision 'main', commit eb115a19a10d14909256db740ed109532ab1483c) is incomplete: 11 file(s) are missing (.gitattributes, README.md, diffusion_pytorch_model.bin, ... (8 more)). Outgoing traffic is disabled ('local_files_only=True'). Re-run the download with network access to complete the snapshot.

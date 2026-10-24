@@ -1,0 +1,49 @@
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 8576.74it/s]
+There are modules in ZImageTransformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+loaded 3D transformer's pretrained weights from /data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer ...
+['/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00001-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00002-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00003-of-00003.safetensors']
+### All Parameters: 6154.901056 M
+### attn1 Parameters: 0.0 M
+Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   6%|▌         | 51/824 [00:00<00:01, 508.59it/s]Loading weights:  14%|█▎        | 112/824 [00:00<00:01, 536.96it/s]Loading weights:  21%|██▏       | 177/824 [00:00<00:01, 585.37it/s]Loading weights:  29%|██▊       | 236/824 [00:00<00:01, 558.17it/s]Loading weights:  36%|███▌      | 293/824 [00:00<00:00, 542.07it/s]Loading weights:  43%|████▎     | 351/824 [00:00<00:00, 553.68it/s]Loading weights:  49%|████▉     | 407/824 [00:00<00:00, 521.43it/s]Loading weights:  67%|██████▋   | 553/824 [00:00<00:00, 792.54it/s]Loading weights:  99%|█████████▉| 814/824 [00:00<00:00, 1327.25it/s]Loading weights: 100%|██████████| 824/824 [00:00<00:00, 848.66it/s] 
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+  sample_00040 step 10 loss 1.260 l1 0.140 lp 0.280 steer 1.014 tf_flip 1 exact_mismatch 0/12 (target 12) 23s
+  sample_00040 step 20 loss 1.065 l1 0.126 lp 0.229 steer 1.005 tf_flip 0 exact_mismatch 1/12 (target 12) 40s
+  sample_00040 step 30 loss 0.995 l1 0.121 lp 0.211 steer 1.052 tf_flip 0 exact_mismatch 0/12 (target 12) 54s
+[sample_00040] anchor_miss 1 init 0 final 1 target 12 stop max_steps 54s vram 26.2GB
+  sample_00041 step 10 loss 1.057 l1 0.112 lp 0.240 steer 0.971 tf_flip 1 exact_mismatch 4/14 (target 14) 23s
+  sample_00041 step 20 loss 0.867 l1 0.097 lp 0.192 steer 1.070 tf_flip 1 exact_mismatch 4/14 (target 14) 40s
+  sample_00041 step 30 loss 0.815 l1 0.093 lp 0.179 steer 0.955 tf_flip 1 exact_mismatch 5/14 (target 14) 54s
+[sample_00041] anchor_miss 4 init 3 final 5 target 14 stop max_steps 54s vram 26.2GB
+  sample_00042 step 10 loss 1.533 l1 0.154 lp 0.357 steer 1.161 tf_flip 2 exact_mismatch 1/12 (target 12) 23s
+  sample_00042 step 20 loss 1.229 l1 0.135 lp 0.275 steer 1.077 tf_flip 1 exact_mismatch 2/12 (target 12) 39s
+  sample_00042 step 30 loss 1.142 l1 0.130 lp 0.250 steer 1.150 tf_flip 1 exact_mismatch 2/12 (target 12) 54s
+[sample_00042] anchor_miss 1 init 4 final 4 target 12 stop max_steps 54s vram 26.2GB
+  sample_00043 step 10 loss 1.225 l1 0.115 lp 0.293 steer 1.054 tf_flip 0 exact_mismatch 0/14 (target 14) 22s
+  sample_00043 step 20 loss 0.984 l1 0.101 lp 0.227 steer 1.058 tf_flip 0 exact_mismatch 0/14 (target 14) 40s
+  sample_00043 step 30 loss 0.925 l1 0.097 lp 0.211 steer 1.078 tf_flip 0 exact_mismatch 0/14 (target 14) 55s
+[sample_00043] anchor_miss 0 init 8 final 8 target 14 stop max_steps 55s vram 26.2GB
+  sample_00044 step 10 loss 1.179 l1 0.110 lp 0.283 steer 1.076 tf_flip 1 exact_mismatch 1/14 (target 14) 22s
+  sample_00044 step 20 loss 0.966 l1 0.098 lp 0.224 steer 1.040 tf_flip 2 exact_mismatch 2/14 (target 14) 37s
+  sample_00044 step 30 loss 0.913 l1 0.095 lp 0.209 steer 1.118 tf_flip 2 exact_mismatch 2/14 (target 14) 53s
+[sample_00044] anchor_miss 1 init 1 final 2 target 14 stop max_steps 53s vram 26.2GB
+  sample_00045 step 10 loss 1.340 l1 0.141 lp 0.305 steer 1.086 tf_flip 1 exact_mismatch 1/12 (target 12) 22s
+  sample_00045 step 20 loss 1.073 l1 0.122 lp 0.236 steer 0.926 tf_flip 2 exact_mismatch 0/12 (target 12) 36s
+  sample_00045 step 30 loss 1.009 l1 0.118 lp 0.219 steer 0.912 tf_flip 1 exact_mismatch 1/12 (target 12) 51s
+[sample_00045] anchor_miss 1 init 2 final 2 target 12 stop max_steps 51s vram 26.2GB
+  sample_00046 step 10 loss 1.364 l1 0.161 lp 0.294 steer 0.953 tf_flip 1 exact_mismatch 1/12 (target 12) 23s
+  sample_00046 step 20 loss 1.093 l1 0.138 lp 0.226 steer 0.994 tf_flip 2 exact_mismatch 1/12 (target 12) 38s
+  sample_00046 step 30 loss 1.028 l1 0.132 lp 0.211 steer 1.009 tf_flip 1 exact_mismatch 1/12 (target 12) 51s
+[sample_00046] anchor_miss 0 init 2 final 2 target 12 stop max_steps 51s vram 26.2GB
+  sample_00047 step 10 loss 1.170 l1 0.130 lp 0.260 steer 1.027 tf_flip 0 exact_mismatch 1/12 (target 12) 16s
+  sample_00047 step 20 loss 0.914 l1 0.109 lp 0.196 steer 1.073 tf_flip 0 exact_mismatch 0/12 (target 12) 29s
+  sample_00047 step 30 loss 0.863 l1 0.105 lp 0.182 steer 1.005 tf_flip 0 exact_mismatch 2/12 (target 12) 42s
+[sample_00047] anchor_miss 0 init 1 final 2 target 12 stop max_steps 42s vram 26.2GB
+  sample_00048 step 10 loss 1.258 l1 0.142 lp 0.277 steer 1.033 tf_flip 2 exact_mismatch 1/14 (target 14) 14s
+  sample_00048 step 20 loss 1.011 l1 0.122 lp 0.215 steer 0.988 tf_flip 2 exact_mismatch 1/14 (target 14) 28s
+  sample_00048 step 30 loss 0.946 l1 0.117 lp 0.199 steer 1.086 tf_flip 1 exact_mismatch 1/14 (target 14) 39s
+[sample_00048] anchor_miss 1 init 2 final 2 target 14 stop max_steps 39s vram 26.2GB
+  sample_00049 step 10 loss 1.144 l1 0.110 lp 0.271 steer 1.065 tf_flip 1 exact_mismatch 2/14 (target 14) 14s
+  sample_00049 step 20 loss 0.959 l1 0.100 lp 0.220 steer 1.075 tf_flip 1 exact_mismatch 1/14 (target 14) 25s
+  sample_00049 step 30 loss 0.903 l1 0.096 lp 0.205 steer 1.071 tf_flip 1 exact_mismatch 1/14 (target 14) 37s
+[sample_00049] anchor_miss 1 init 1 final 2 target 14 stop max_steps 37s vram 26.2GB

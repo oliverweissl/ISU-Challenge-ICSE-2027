@@ -1,0 +1,608 @@
+loaded 3D transformer's pretrained weights from /data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer ...
+['/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00001-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00002-of-00003.safetensors', '/data/weissl/.cache/huggingface/hub/models--Tongyi-MAI--Z-Image-Turbo/snapshots/f332072aa78be7aecdf3ee76d5c247082da564a6/transformer/diffusion_pytorch_model-00003-of-00003.safetensors']
+Missing keys will be initialized: ['control_all_x_embedder.2-1.bias', 'control_all_x_embedder.2-1.weight', 'control_layers.0.adaLN_modulation.0.bias', 'control_layers.0.adaLN_modulation.0.weight', 'control_layers.0.after_proj.bias', 'control_layers.0.after_proj.weight', 'control_layers.0.attention.norm_k.weight', 'control_layers.0.attention.norm_q.weight', 'control_layers.0.attention.to_k.weight', 'control_layers.0.attention.to_out.0.weight', 'control_layers.0.attention.to_q.weight', 'control_layers.0.attention.to_v.weight', 'control_layers.0.attention_norm1.weight', 'control_layers.0.attention_norm2.weight', 'control_layers.0.before_proj.bias', 'control_layers.0.before_proj.weight', 'control_layers.0.feed_forward.w1.weight', 'control_layers.0.feed_forward.w2.weight', 'control_layers.0.feed_forward.w3.weight', 'control_layers.0.ffn_norm1.weight', 'control_layers.0.ffn_norm2.weight', 'control_layers.1.adaLN_modulation.0.bias', 'control_layers.1.adaLN_modulation.0.weight', 'control_layers.1.after_proj.bias', 'control_layers.1.after_proj.weight', 'control_layers.1.attention.norm_k.weight', 'control_layers.1.attention.norm_q.weight', 'control_layers.1.attention.to_k.weight', 'control_layers.1.attention.to_out.0.weight', 'control_layers.1.attention.to_q.weight', 'control_layers.1.attention.to_v.weight', 'control_layers.1.attention_norm1.weight', 'control_layers.1.attention_norm2.weight', 'control_layers.1.feed_forward.w1.weight', 'control_layers.1.feed_forward.w2.weight', 'control_layers.1.feed_forward.w3.weight', 'control_layers.1.ffn_norm1.weight', 'control_layers.1.ffn_norm2.weight', 'control_layers.10.adaLN_modulation.0.bias', 'control_layers.10.adaLN_modulation.0.weight', 'control_layers.10.after_proj.bias', 'control_layers.10.after_proj.weight', 'control_layers.10.attention.norm_k.weight', 'control_layers.10.attention.norm_q.weight', 'control_layers.10.attention.to_k.weight', 'control_layers.10.attention.to_out.0.weight', 'control_layers.10.attention.to_q.weight', 'control_layers.10.attention.to_v.weight', 'control_layers.10.attention_norm1.weight', 'control_layers.10.attention_norm2.weight', 'control_layers.10.feed_forward.w1.weight', 'control_layers.10.feed_forward.w2.weight', 'control_layers.10.feed_forward.w3.weight', 'control_layers.10.ffn_norm1.weight', 'control_layers.10.ffn_norm2.weight', 'control_layers.11.adaLN_modulation.0.bias', 'control_layers.11.adaLN_modulation.0.weight', 'control_layers.11.after_proj.bias', 'control_layers.11.after_proj.weight', 'control_layers.11.attention.norm_k.weight', 'control_layers.11.attention.norm_q.weight', 'control_layers.11.attention.to_k.weight', 'control_layers.11.attention.to_out.0.weight', 'control_layers.11.attention.to_q.weight', 'control_layers.11.attention.to_v.weight', 'control_layers.11.attention_norm1.weight', 'control_layers.11.attention_norm2.weight', 'control_layers.11.feed_forward.w1.weight', 'control_layers.11.feed_forward.w2.weight', 'control_layers.11.feed_forward.w3.weight', 'control_layers.11.ffn_norm1.weight', 'control_layers.11.ffn_norm2.weight', 'control_layers.12.adaLN_modulation.0.bias', 'control_layers.12.adaLN_modulation.0.weight', 'control_layers.12.after_proj.bias', 'control_layers.12.after_proj.weight', 'control_layers.12.attention.norm_k.weight', 'control_layers.12.attention.norm_q.weight', 'control_layers.12.attention.to_k.weight', 'control_layers.12.attention.to_out.0.weight', 'control_layers.12.attention.to_q.weight', 'control_layers.12.attention.to_v.weight', 'control_layers.12.attention_norm1.weight', 'control_layers.12.attention_norm2.weight', 'control_layers.12.feed_forward.w1.weight', 'control_layers.12.feed_forward.w2.weight', 'control_layers.12.feed_forward.w3.weight', 'control_layers.12.ffn_norm1.weight', 'control_layers.12.ffn_norm2.weight', 'control_layers.13.adaLN_modulation.0.bias', 'control_layers.13.adaLN_modulation.0.weight', 'control_layers.13.after_proj.bias', 'control_layers.13.after_proj.weight', 'control_layers.13.attention.norm_k.weight', 'control_layers.13.attention.norm_q.weight', 'control_layers.13.attention.to_k.weight', 'control_layers.13.attention.to_out.0.weight', 'control_layers.13.attention.to_q.weight', 'control_layers.13.attention.to_v.weight', 'control_layers.13.attention_norm1.weight', 'control_layers.13.attention_norm2.weight', 'control_layers.13.feed_forward.w1.weight', 'control_layers.13.feed_forward.w2.weight', 'control_layers.13.feed_forward.w3.weight', 'control_layers.13.ffn_norm1.weight', 'control_layers.13.ffn_norm2.weight', 'control_layers.14.adaLN_modulation.0.bias', 'control_layers.14.adaLN_modulation.0.weight', 'control_layers.14.after_proj.bias', 'control_layers.14.after_proj.weight', 'control_layers.14.attention.norm_k.weight', 'control_layers.14.attention.norm_q.weight', 'control_layers.14.attention.to_k.weight', 'control_layers.14.attention.to_out.0.weight', 'control_layers.14.attention.to_q.weight', 'control_layers.14.attention.to_v.weight', 'control_layers.14.attention_norm1.weight', 'control_layers.14.attention_norm2.weight', 'control_layers.14.feed_forward.w1.weight', 'control_layers.14.feed_forward.w2.weight', 'control_layers.14.feed_forward.w3.weight', 'control_layers.14.ffn_norm1.weight', 'control_layers.14.ffn_norm2.weight', 'control_layers.2.adaLN_modulation.0.bias', 'control_layers.2.adaLN_modulation.0.weight', 'control_layers.2.after_proj.bias', 'control_layers.2.after_proj.weight', 'control_layers.2.attention.norm_k.weight', 'control_layers.2.attention.norm_q.weight', 'control_layers.2.attention.to_k.weight', 'control_layers.2.attention.to_out.0.weight', 'control_layers.2.attention.to_q.weight', 'control_layers.2.attention.to_v.weight', 'control_layers.2.attention_norm1.weight', 'control_layers.2.attention_norm2.weight', 'control_layers.2.feed_forward.w1.weight', 'control_layers.2.feed_forward.w2.weight', 'control_layers.2.feed_forward.w3.weight', 'control_layers.2.ffn_norm1.weight', 'control_layers.2.ffn_norm2.weight', 'control_layers.3.adaLN_modulation.0.bias', 'control_layers.3.adaLN_modulation.0.weight', 'control_layers.3.after_proj.bias', 'control_layers.3.after_proj.weight', 'control_layers.3.attention.norm_k.weight', 'control_layers.3.attention.norm_q.weight', 'control_layers.3.attention.to_k.weight', 'control_layers.3.attention.to_out.0.weight', 'control_layers.3.attention.to_q.weight', 'control_layers.3.attention.to_v.weight', 'control_layers.3.attention_norm1.weight', 'control_layers.3.attention_norm2.weight', 'control_layers.3.feed_forward.w1.weight', 'control_layers.3.feed_forward.w2.weight', 'control_layers.3.feed_forward.w3.weight', 'control_layers.3.ffn_norm1.weight', 'control_layers.3.ffn_norm2.weight', 'control_layers.4.adaLN_modulation.0.bias', 'control_layers.4.adaLN_modulation.0.weight', 'control_layers.4.after_proj.bias', 'control_layers.4.after_proj.weight', 'control_layers.4.attention.norm_k.weight', 'control_layers.4.attention.norm_q.weight', 'control_layers.4.attention.to_k.weight', 'control_layers.4.attention.to_out.0.weight', 'control_layers.4.attention.to_q.weight', 'control_layers.4.attention.to_v.weight', 'control_layers.4.attention_norm1.weight', 'control_layers.4.attention_norm2.weight', 'control_layers.4.feed_forward.w1.weight', 'control_layers.4.feed_forward.w2.weight', 'control_layers.4.feed_forward.w3.weight', 'control_layers.4.ffn_norm1.weight', 'control_layers.4.ffn_norm2.weight', 'control_layers.5.adaLN_modulation.0.bias', 'control_layers.5.adaLN_modulation.0.weight', 'control_layers.5.after_proj.bias', 'control_layers.5.after_proj.weight', 'control_layers.5.attention.norm_k.weight', 'control_layers.5.attention.norm_q.weight', 'control_layers.5.attention.to_k.weight', 'control_layers.5.attention.to_out.0.weight', 'control_layers.5.attention.to_q.weight', 'control_layers.5.attention.to_v.weight', 'control_layers.5.attention_norm1.weight', 'control_layers.5.attention_norm2.weight', 'control_layers.5.feed_forward.w1.weight', 'control_layers.5.feed_forward.w2.weight', 'control_layers.5.feed_forward.w3.weight', 'control_layers.5.ffn_norm1.weight', 'control_layers.5.ffn_norm2.weight', 'control_layers.6.adaLN_modulation.0.bias', 'control_layers.6.adaLN_modulation.0.weight', 'control_layers.6.after_proj.bias', 'control_layers.6.after_proj.weight', 'control_layers.6.attention.norm_k.weight', 'control_layers.6.attention.norm_q.weight', 'control_layers.6.attention.to_k.weight', 'control_layers.6.attention.to_out.0.weight', 'control_layers.6.attention.to_q.weight', 'control_layers.6.attention.to_v.weight', 'control_layers.6.attention_norm1.weight', 'control_layers.6.attention_norm2.weight', 'control_layers.6.feed_forward.w1.weight', 'control_layers.6.feed_forward.w2.weight', 'control_layers.6.feed_forward.w3.weight', 'control_layers.6.ffn_norm1.weight', 'control_layers.6.ffn_norm2.weight', 'control_layers.7.adaLN_modulation.0.bias', 'control_layers.7.adaLN_modulation.0.weight', 'control_layers.7.after_proj.bias', 'control_layers.7.after_proj.weight', 'control_layers.7.attention.norm_k.weight', 'control_layers.7.attention.norm_q.weight', 'control_layers.7.attention.to_k.weight', 'control_layers.7.attention.to_out.0.weight', 'control_layers.7.attention.to_q.weight', 'control_layers.7.attention.to_v.weight', 'control_layers.7.attention_norm1.weight', 'control_layers.7.attention_norm2.weight', 'control_layers.7.feed_forward.w1.weight', 'control_layers.7.feed_forward.w2.weight', 'control_layers.7.feed_forward.w3.weight', 'control_layers.7.ffn_norm1.weight', 'control_layers.7.ffn_norm2.weight', 'control_layers.8.adaLN_modulation.0.bias', 'control_layers.8.adaLN_modulation.0.weight', 'control_layers.8.after_proj.bias', 'control_layers.8.after_proj.weight', 'control_layers.8.attention.norm_k.weight', 'control_layers.8.attention.norm_q.weight', 'control_layers.8.attention.to_k.weight', 'control_layers.8.attention.to_out.0.weight', 'control_layers.8.attention.to_q.weight', 'control_layers.8.attention.to_v.weight', 'control_layers.8.attention_norm1.weight', 'control_layers.8.attention_norm2.weight', 'control_layers.8.feed_forward.w1.weight', 'control_layers.8.feed_forward.w2.weight', 'control_layers.8.feed_forward.w3.weight', 'control_layers.8.ffn_norm1.weight', 'control_layers.8.ffn_norm2.weight', 'control_layers.9.adaLN_modulation.0.bias', 'control_layers.9.adaLN_modulation.0.weight', 'control_layers.9.after_proj.bias', 'control_layers.9.after_proj.weight', 'control_layers.9.attention.norm_k.weight', 'control_layers.9.attention.norm_q.weight', 'control_layers.9.attention.to_k.weight', 'control_layers.9.attention.to_out.0.weight', 'control_layers.9.attention.to_q.weight', 'control_layers.9.attention.to_v.weight', 'control_layers.9.attention_norm1.weight', 'control_layers.9.attention_norm2.weight', 'control_layers.9.feed_forward.w1.weight', 'control_layers.9.feed_forward.w2.weight', 'control_layers.9.feed_forward.w3.weight', 'control_layers.9.ffn_norm1.weight', 'control_layers.9.ffn_norm2.weight', 'control_noise_refiner.0.adaLN_modulation.0.bias', 'control_noise_refiner.0.adaLN_modulation.0.weight', 'control_noise_refiner.0.after_proj.bias', 'control_noise_refiner.0.after_proj.weight', 'control_noise_refiner.0.attention.norm_k.weight', 'control_noise_refiner.0.attention.norm_q.weight', 'control_noise_refiner.0.attention.to_k.weight', 'control_noise_refiner.0.attention.to_out.0.weight', 'control_noise_refiner.0.attention.to_q.weight', 'control_noise_refiner.0.attention.to_v.weight', 'control_noise_refiner.0.attention_norm1.weight', 'control_noise_refiner.0.attention_norm2.weight', 'control_noise_refiner.0.before_proj.bias', 'control_noise_refiner.0.before_proj.weight', 'control_noise_refiner.0.feed_forward.w1.weight', 'control_noise_refiner.0.feed_forward.w2.weight', 'control_noise_refiner.0.feed_forward.w3.weight', 'control_noise_refiner.0.ffn_norm1.weight', 'control_noise_refiner.0.ffn_norm2.weight', 'control_noise_refiner.1.adaLN_modulation.0.bias', 'control_noise_refiner.1.adaLN_modulation.0.weight', 'control_noise_refiner.1.after_proj.bias', 'control_noise_refiner.1.after_proj.weight', 'control_noise_refiner.1.attention.norm_k.weight', 'control_noise_refiner.1.attention.norm_q.weight', 'control_noise_refiner.1.attention.to_k.weight', 'control_noise_refiner.1.attention.to_out.0.weight', 'control_noise_refiner.1.attention.to_q.weight', 'control_noise_refiner.1.attention.to_v.weight', 'control_noise_refiner.1.attention_norm1.weight', 'control_noise_refiner.1.attention_norm2.weight', 'control_noise_refiner.1.feed_forward.w1.weight', 'control_noise_refiner.1.feed_forward.w2.weight', 'control_noise_refiner.1.feed_forward.w3.weight', 'control_noise_refiner.1.ffn_norm1.weight', 'control_noise_refiner.1.ffn_norm2.weight']
+Initializing missing parameter 'control_layers.12.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.10.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.8.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.8.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.5.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.5.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_all_x_embedder.2-1.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.12.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.1.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.9.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.1.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.7.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.11.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.4.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.before_proj.weight' with zero.
+Initializing missing parameter 'control_noise_refiner.1.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.10.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.4.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.3.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.10.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.13.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.0.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.after_proj.bias' with zero.
+Initializing missing parameter 'control_noise_refiner.1.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.0.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.9.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.12.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.after_proj.bias' with zero.
+Initializing missing parameter 'control_noise_refiner.1.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.11.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.6.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.7.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.before_proj.bias' with zero.
+Initializing missing parameter 'control_layers.5.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.10.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.6.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.3.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.11.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.adaLN_modulation.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.7.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.12.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.after_proj.bias' with zero.
+Initializing missing parameter 'control_noise_refiner.1.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.before_proj.weight' with zero.
+Initializing missing parameter 'control_layers.1.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.14.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.1.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.before_proj.bias' with zero.
+Initializing missing parameter 'control_layers.0.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.10.feed_forward.w1.weight' with model.state_dict().
+There are modules in ZImageControlTransformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+There are modules in AutoencoderKL that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Initializing missing parameter 'control_layers.8.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.10.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.0.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.5.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.2.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.3.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.12.ffn_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.after_proj.bias' with zero.
+Initializing missing parameter 'control_layers.5.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.4.attention_norm2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.2.attention.to_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.6.feed_forward.w1.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.1.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention.to_out.0.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.feed_forward.w2.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.5.adaLN_modulation.0.bias' with model.state_dict().
+Initializing missing parameter 'control_layers.6.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.8.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.attention_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.3.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.after_proj.weight' with zero.
+Initializing missing parameter 'control_layers.6.attention.norm_q.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.ffn_norm1.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.9.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.7.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.8.attention.to_v.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.13.after_proj.weight' with zero.
+Initializing missing parameter 'control_noise_refiner.0.attention.to_q.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.feed_forward.w3.weight' with model.state_dict().
+Initializing missing parameter 'control_noise_refiner.0.attention.norm_k.weight' with model.state_dict().
+Initializing missing parameter 'control_layers.11.attention.norm_k.weight' with model.state_dict().
+### All Parameters: 9511.126848 M
+### attn1 Parameters: 0.0 M
+controlnet load: missing=521 unexpected=0
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 9254.02it/s]
+1/60 sample_00000 1.22s/img
+2/60 sample_00001 1.22s/img
+3/60 sample_00002 1.22s/img
+4/60 sample_00003 1.22s/img
+5/60 sample_00004 1.22s/img
+6/60 sample_00005 1.23s/img
+7/60 sample_00006 1.23s/img
+8/60 sample_00007 1.23s/img
+9/60 sample_00008 1.23s/img
+10/60 sample_00009 1.23s/img
+11/60 sample_00010 1.23s/img
+12/60 sample_00011 1.23s/img
+13/60 sample_00012 1.23s/img
+14/60 sample_00013 1.23s/img
+15/60 sample_00014 1.23s/img
+16/60 sample_00015 1.23s/img
+17/60 sample_00016 1.23s/img
+18/60 sample_00017 1.23s/img
+19/60 sample_00018 1.23s/img
+20/60 sample_00019 1.23s/img
+21/60 sample_00020 1.23s/img
+22/60 sample_00021 1.23s/img
+23/60 sample_00022 1.23s/img
+24/60 sample_00023 1.23s/img
+25/60 sample_00024 1.23s/img
+26/60 sample_00025 1.23s/img
+27/60 sample_00026 1.23s/img
+28/60 sample_00027 1.23s/img
+29/60 sample_00028 1.23s/img
+30/60 sample_00029 1.23s/img
+31/60 sample_00030 1.23s/img
+32/60 sample_00031 1.23s/img
+33/60 sample_00032 1.23s/img
+34/60 sample_00033 1.23s/img
+35/60 sample_00034 1.23s/img
+36/60 sample_00035 1.23s/img
+37/60 sample_00036 1.23s/img
+38/60 sample_00037 1.23s/img
+39/60 sample_00038 1.23s/img
+40/60 sample_00039 1.23s/img
+41/60 sample_00040 1.23s/img
+42/60 sample_00041 1.23s/img
+43/60 sample_00042 1.23s/img
+44/60 sample_00043 1.23s/img
+45/60 sample_00044 1.23s/img
+46/60 sample_00045 1.23s/img
+47/60 sample_00046 1.23s/img
+48/60 sample_00047 1.23s/img
+49/60 sample_00048 1.23s/img
+50/60 sample_00049 1.23s/img
+51/60 sample_00050 1.23s/img
+52/60 sample_00051 1.23s/img
+53/60 sample_00052 1.23s/img
+54/60 sample_00053 1.23s/img
+55/60 sample_00054 1.23s/img
+56/60 sample_00055 1.23s/img
+57/60 sample_00056 1.23s/img
+58/60 sample_00057 1.23s/img
+59/60 sample_00058 1.23s/img
+60/60 sample_00059 1.24s/img
+z5_gate_60 generated
+1/60 sample_00000 1.11s/img
+2/60 sample_00001 1.11s/img
+3/60 sample_00002 1.11s/img
+4/60 sample_00003 1.11s/img
+5/60 sample_00004 1.11s/img
+6/60 sample_00005 1.11s/img
+7/60 sample_00006 1.11s/img
+8/60 sample_00007 1.11s/img
+9/60 sample_00008 1.11s/img
+10/60 sample_00009 1.11s/img
+11/60 sample_00010 1.11s/img
+12/60 sample_00011 1.11s/img
+13/60 sample_00012 1.11s/img
+14/60 sample_00013 1.11s/img
+15/60 sample_00014 1.11s/img
+16/60 sample_00015 1.11s/img
+17/60 sample_00016 1.11s/img
+18/60 sample_00017 1.11s/img
+19/60 sample_00018 1.11s/img
+20/60 sample_00019 1.11s/img
+21/60 sample_00020 1.11s/img
+22/60 sample_00021 1.11s/img
+23/60 sample_00022 1.11s/img
+24/60 sample_00023 1.11s/img
+25/60 sample_00024 1.11s/img
+26/60 sample_00025 1.11s/img
+27/60 sample_00026 1.11s/img
+28/60 sample_00027 1.11s/img
+29/60 sample_00028 1.11s/img
+30/60 sample_00029 1.11s/img
+31/60 sample_00030 1.11s/img
+32/60 sample_00031 1.11s/img
+33/60 sample_00032 1.11s/img
+34/60 sample_00033 1.11s/img
+35/60 sample_00034 1.11s/img
+36/60 sample_00035 1.11s/img
+37/60 sample_00036 1.11s/img
+38/60 sample_00037 1.11s/img
+39/60 sample_00038 1.11s/img
+40/60 sample_00039 1.11s/img
+41/60 sample_00040 1.11s/img
+42/60 sample_00041 1.11s/img
+43/60 sample_00042 1.11s/img
+44/60 sample_00043 1.11s/img
+45/60 sample_00044 1.11s/img
+46/60 sample_00045 1.11s/img
+47/60 sample_00046 1.11s/img
+48/60 sample_00047 1.11s/img
+49/60 sample_00048 1.11s/img
+50/60 sample_00049 1.11s/img
+51/60 sample_00050 1.11s/img
+52/60 sample_00051 1.11s/img
+53/60 sample_00052 1.11s/img
+54/60 sample_00053 1.11s/img
+55/60 sample_00054 1.11s/img
+56/60 sample_00055 1.11s/img
+57/60 sample_00056 1.11s/img
+58/60 sample_00057 1.11s/img
+59/60 sample_00058 1.11s/img
+60/60 sample_00059 1.11s/img
+z4_ramp_s0.6_60 generated
+1/60 sample_00000 0.82s/img
+2/60 sample_00001 0.82s/img
+3/60 sample_00002 0.83s/img
+4/60 sample_00003 0.82s/img
+5/60 sample_00004 0.82s/img
+6/60 sample_00005 0.82s/img
+7/60 sample_00006 0.82s/img
+8/60 sample_00007 0.82s/img
+9/60 sample_00008 0.82s/img
+10/60 sample_00009 0.82s/img
+11/60 sample_00010 0.82s/img
+12/60 sample_00011 0.82s/img
+13/60 sample_00012 0.82s/img
+14/60 sample_00013 0.82s/img
+15/60 sample_00014 0.82s/img
+16/60 sample_00015 0.82s/img
+17/60 sample_00016 0.82s/img
+18/60 sample_00017 0.82s/img
+19/60 sample_00018 0.82s/img
+20/60 sample_00019 0.82s/img
+21/60 sample_00020 0.82s/img
+22/60 sample_00021 0.82s/img
+23/60 sample_00022 0.82s/img
+24/60 sample_00023 0.82s/img
+25/60 sample_00024 0.82s/img
+26/60 sample_00025 0.82s/img
+27/60 sample_00026 0.82s/img
+28/60 sample_00027 0.82s/img
+29/60 sample_00028 0.82s/img
+30/60 sample_00029 0.82s/img
+31/60 sample_00030 0.82s/img
+32/60 sample_00031 0.82s/img
+33/60 sample_00032 0.82s/img
+34/60 sample_00033 0.82s/img
+35/60 sample_00034 0.82s/img
+36/60 sample_00035 0.82s/img
+37/60 sample_00036 0.82s/img
+38/60 sample_00037 0.82s/img
+39/60 sample_00038 0.82s/img
+40/60 sample_00039 0.82s/img
+41/60 sample_00040 0.82s/img
+42/60 sample_00041 0.82s/img
+43/60 sample_00042 0.82s/img
+44/60 sample_00043 0.82s/img
+45/60 sample_00044 0.82s/img
+46/60 sample_00045 0.82s/img
+47/60 sample_00046 0.82s/img
+48/60 sample_00047 0.82s/img
+49/60 sample_00048 0.82s/img
+50/60 sample_00049 0.82s/img
+51/60 sample_00050 0.82s/img
+52/60 sample_00051 0.82s/img
+53/60 sample_00052 0.82s/img
+54/60 sample_00053 0.82s/img
+55/60 sample_00054 0.82s/img
+56/60 sample_00055 0.82s/img
+57/60 sample_00056 0.82s/img
+58/60 sample_00057 0.82s/img
+59/60 sample_00058 0.82s/img
+60/60 sample_00059 0.82s/img
+z3_s0.4_fisheye_60 generated
+1/60 sample_00000 1.10s/img
+2/60 sample_00001 1.10s/img
+3/60 sample_00002 1.10s/img
+4/60 sample_00003 1.11s/img
+5/60 sample_00004 1.10s/img
+6/60 sample_00005 1.10s/img
+7/60 sample_00006 1.10s/img
+8/60 sample_00007 1.10s/img
+9/60 sample_00008 1.10s/img
+10/60 sample_00009 1.10s/img
+11/60 sample_00010 1.10s/img
+12/60 sample_00011 1.10s/img
+13/60 sample_00012 1.10s/img
+14/60 sample_00013 1.10s/img
+15/60 sample_00014 1.10s/img
+16/60 sample_00015 1.10s/img
+17/60 sample_00016 1.10s/img
+18/60 sample_00017 1.10s/img
+19/60 sample_00018 1.10s/img
+20/60 sample_00019 1.10s/img
+21/60 sample_00020 1.10s/img
+22/60 sample_00021 1.10s/img
+23/60 sample_00022 1.10s/img
+24/60 sample_00023 1.10s/img
+25/60 sample_00024 1.10s/img
+26/60 sample_00025 1.10s/img
+27/60 sample_00026 1.10s/img
+28/60 sample_00027 1.10s/img
+29/60 sample_00028 1.10s/img
+30/60 sample_00029 1.10s/img
+31/60 sample_00030 1.10s/img
+32/60 sample_00031 1.10s/img
+33/60 sample_00032 1.10s/img
+34/60 sample_00033 1.10s/img
+35/60 sample_00034 1.10s/img
+36/60 sample_00035 1.10s/img
+37/60 sample_00036 1.10s/img
+38/60 sample_00037 1.10s/img
+39/60 sample_00038 1.10s/img
+40/60 sample_00039 1.10s/img
+41/60 sample_00040 1.10s/img
+42/60 sample_00041 1.10s/img
+43/60 sample_00042 1.10s/img
+44/60 sample_00043 1.10s/img
+45/60 sample_00044 1.10s/img
+46/60 sample_00045 1.10s/img
+47/60 sample_00046 1.10s/img
+48/60 sample_00047 1.10s/img
+49/60 sample_00048 1.10s/img
+50/60 sample_00049 1.10s/img
+51/60 sample_00050 1.10s/img
+52/60 sample_00051 1.10s/img
+53/60 sample_00052 1.10s/img
+54/60 sample_00053 1.10s/img
+55/60 sample_00054 1.10s/img
+56/60 sample_00055 1.10s/img
+57/60 sample_00056 1.10s/img
+58/60 sample_00057 1.10s/img
+59/60 sample_00058 1.10s/img
+60/60 sample_00059 1.10s/img
+z3_s0.6_label_60 generated
+1/60 sample_00000 1.41s/img
+2/60 sample_00001 1.41s/img
+3/60 sample_00002 1.41s/img
+4/60 sample_00003 1.41s/img
+5/60 sample_00004 1.41s/img
+6/60 sample_00005 1.41s/img
+7/60 sample_00006 1.41s/img
+8/60 sample_00007 1.41s/img
+9/60 sample_00008 1.41s/img
+10/60 sample_00009 1.41s/img
+11/60 sample_00010 1.41s/img
+12/60 sample_00011 1.41s/img
+13/60 sample_00012 1.41s/img
+14/60 sample_00013 1.41s/img
+15/60 sample_00014 1.41s/img
+16/60 sample_00015 1.41s/img
+17/60 sample_00016 1.41s/img
+18/60 sample_00017 1.41s/img
+19/60 sample_00018 1.41s/img
+20/60 sample_00019 1.41s/img
+21/60 sample_00020 1.41s/img
+22/60 sample_00021 1.41s/img
+23/60 sample_00022 1.41s/img
+24/60 sample_00023 1.41s/img
+25/60 sample_00024 1.41s/img
+26/60 sample_00025 1.41s/img
+27/60 sample_00026 1.41s/img
+28/60 sample_00027 1.41s/img
+29/60 sample_00028 1.41s/img
+30/60 sample_00029 1.40s/img
+31/60 sample_00030 1.40s/img
+32/60 sample_00031 1.40s/img
+33/60 sample_00032 1.40s/img
+34/60 sample_00033 1.40s/img
+35/60 sample_00034 1.40s/img
+36/60 sample_00035 1.40s/img
+37/60 sample_00036 1.40s/img
+38/60 sample_00037 1.40s/img
+39/60 sample_00038 1.40s/img
+40/60 sample_00039 1.40s/img
+41/60 sample_00040 1.40s/img
+42/60 sample_00041 1.40s/img
+43/60 sample_00042 1.40s/img
+44/60 sample_00043 1.40s/img
+45/60 sample_00044 1.40s/img
+46/60 sample_00045 1.40s/img
+47/60 sample_00046 1.40s/img
+48/60 sample_00047 1.40s/img
+49/60 sample_00048 1.40s/img
+50/60 sample_00049 1.40s/img
+51/60 sample_00050 1.40s/img
+52/60 sample_00051 1.40s/img
+53/60 sample_00052 1.40s/img
+54/60 sample_00053 1.40s/img
+55/60 sample_00054 1.40s/img
+56/60 sample_00055 1.40s/img
+57/60 sample_00056 1.40s/img
+58/60 sample_00057 1.40s/img
+59/60 sample_00058 1.40s/img
+60/60 sample_00059 1.40s/img
+z4_ramp_s0.75_60 generated
